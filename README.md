@@ -11,11 +11,13 @@ This utility scrapes [mailchimp.com/replyall](http://mailchimp.com/replyall/) at
 
 ##### Nokogiri
 
-Parsing an HTML/XML document is very easey with [Nokogiri](http://www.nokogiri.org/). After that, all the `divs` with class `freddie` are pulled into an array. The first one of those is the current Freddie.
+Parsing an HTML/XML document is easily done thanks to [Nokogiri](http://www.nokogiri.org/). After that, all the `divs` with class `freddie` are pulled into an array. The first one of those is the current Freddie.
 
 ```
 doc = Nokogiri::HTML(open("http://www.mailchimp.com/replyall"))
 @freddies = doc.css("div.freddie")
+
+@active_freddie = @freddies.first['id']
 ```
 
 The `id` of the element is then checked against an existing stored `id` in a database. If the new fetched `id` doesn't match the previous, we have a new Freddie!
