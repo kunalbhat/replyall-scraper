@@ -41,5 +41,3 @@ def old_freddie
 
   return @freddie['title']
 end
-
-get_freddie
