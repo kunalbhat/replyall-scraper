@@ -55,6 +55,7 @@ GEM
       data_objects (= 0.10.17)
     domain_name (0.5.20160216)
       unf (>= 0.0.5, < 1.0.0)
+    dotenv (2.1.0)
     fastercsv (1.5.5)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
@@ -86,6 +87,7 @@ PLATFORMS
 DEPENDENCIES
   data_mapper
   dm-postgres-adapter
+  dotenv
   mailgun-ruby (~> 1.0.3)
   nokogiri
   puma
