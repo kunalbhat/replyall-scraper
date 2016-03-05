@@ -7,6 +7,17 @@ This utility scrapes [mailchimp.com/replyall](http://mailchimp.com/replyall/) at
 
 > Dismayed to miss out on the Gold Freddie, I vowed to never let it happen again.
 
+#### What it is
+
+Silly example aside, this app provides a loose template to create utilities for similar use cases:
+
+- Scrape a page and get a value
+- Compare that value against a stored value
+- If it has changed, update the stored value
+- Send an email to notify of the change
+
+It was fun to use Nokogiri, Heroku Scheduler, and Mailgun for this exercise.
+
 ---
 
 ### How it works
