@@ -3,18 +3,12 @@ require 'open-uri'
 
 Bundler.require
 
+require_relative 'config/mailgun'
 require_relative 'config/datamapper'
 require_relative 'models/post'
 
 def send_notification
-  mg_client = Mailgun::Client.new "#{ENV['MAILGUN_API_KEY_SANDBOX']}"
-
-  message_params = {:from    => "Mailgun Sandbox <#{ENV['MAILGUN_FROM']}>",
-                    :to      => "Kunal Bhat <#{ENV['MAILGUN_TO']}>",
-                    :subject => 'NEW FREDDIE AVAILABLE!!!',
-                    :text    => 'Go get it at mailchimp.com/replyall !!!'}
-
-  mg_client.send_message "#{ENV['MAILGUN_FROM'].split('@')[1]}", message_params
+  @mg_client.send_message "#{ENV['MAILGUN_FROM'].split('@')[1]}", @message_params
 end
 
 def update_freddie(new_freddie)
