@@ -20,13 +20,13 @@ def get_freddie
   @freddies       = doc.css("div.freddie")
   @active_freddie = @freddies.first['id']
 
-  if @active_freddie != get_old_freddie
+  if @active_freddie != old_freddie
     # Send notification e.g. "New Freddie!"
     update_freddie(@active_freddie)
   end
 end
 
-def get_old_freddie
+def old_freddie
   @freddie = Post.last
 
   return @freddie['title']
