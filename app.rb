@@ -29,8 +29,10 @@ def get_freddie
   @active_freddie = @freddies.first['id']
 
   if @active_freddie != old_freddie
-    # Send notification e.g. "New Freddie!"
+    send_notification # Send notification through Mailgun
     update_freddie(@active_freddie)
+  else
+    p "No new Freddie yet"
   end
 end
 
