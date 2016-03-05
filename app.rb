@@ -7,9 +7,6 @@ require_relative 'config/datamapper'
 require_relative 'models/post'
 
 def update_freddie(new_freddie)
-  DataMapper.auto_upgrade!
-  DataMapper.finalize
-
   post_to_update = Post.last
   post_to_update.update(:title => new_freddie)
 end
