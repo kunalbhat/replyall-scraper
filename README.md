@@ -29,7 +29,14 @@ end
 
 ##### Heroku Scheduler
 
-[Heroku Scheduler](https://elements.heroku.com/addons/scheduler) runs the script that checks the page every hour. If anything has changed, the app will send a notification.
+[Heroku Scheduler](https://elements.heroku.com/addons/scheduler) runs the Rake task below every hour. If the app notices a new Freddie is available, an email notification will be sent.
+
+```
+task :default do
+  desc "Scrape the page task run by Scheduler"
+  get_freddie
+end
+```
 
 ##### Mailgun
 
