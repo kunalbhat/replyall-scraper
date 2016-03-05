@@ -7,7 +7,9 @@ This utility scrapes [mailchimp.com/replyall](http://mailchimp.com/replyall/) at
 
 > Dismayed to miss out on the Gold Freddie, I vowed to never let it happen again.
 
-#### What it is
+---
+
+### What it does
 
 Silly example aside, this app provides a loose template to create utilities for similar use cases:
 
