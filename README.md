@@ -7,6 +7,8 @@ This utility scrapes [mailchimp.com/replyall](http://mailchimp.com/replyall/) at
 
 > Dismayed to miss out on the Gold Freddie, I vowed to never let it happen again.
 
+---
+
 ### How it works
 
 ##### Nokogiri
