@@ -1,11 +1,7 @@
-Bundler.require
-
+require 'bundler'
 require 'open-uri'
 
-DataMapper.setup(:default, "sqlite3://#{File.expand_path(File.dirname(__FILE__))}/db/db.sqlite")
-
-class Post
-  include DataMapper::Resource
+Bundler.require
 
   property :id,    Serial
   property :title, String
