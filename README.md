@@ -58,7 +58,7 @@ end
 
 ### Configuration
 
-Some environment variables are defined:
+Some environment variables are defined, locally in an `.env` file, and in Heroku's configuration for production:
 
 ```
 export DATABASE_URL=<value>
