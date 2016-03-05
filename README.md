@@ -1,7 +1,7 @@
 # Find Freddie
 ### Never miss out on a new Freddie again!
 
-This utility scrapes [mailchimp.com/replyall](http://mailchimp.com/replyall/) at intervals and alerts users if a new Freddie is available. These free giveaways run out quickly, so time is of the essence.
+This utility scrapes [mailchimp.com/replyall](http://mailchimp.com/replyall/) at an interval and alerts me if a new Freddie is available. These free giveaways run out quickly, so time is of the essence.
 
 ![All Gone](https://dl.dropboxusercontent.com/u/7583033/github/all_gone.png)
 
@@ -10,7 +10,8 @@ This utility scrapes [mailchimp.com/replyall](http://mailchimp.com/replyall/) at
 ### How it works
 
 ##### Nokogiri
-Using [Nokogiri](http://www.nokogiri.org/), the page can very easily be parsed. After that, all the `divs` with class `freddie` are pulled into an array. The first one of those is the current Freddie.
+
+Parsing an HTML/XML document is very easey with [Nokogiri](http://www.nokogiri.org/). After that, all the `divs` with class `freddie` are pulled into an array. The first one of those is the current Freddie.
 
 ```
 doc = Nokogiri::HTML(open("http://www.mailchimp.com/replyall"))
@@ -26,8 +27,10 @@ if @active_freddie != old_freddie
 end
 ```
 
-##### [Heroku Scheduler](https://elements.heroku.com/addons/scheduler)
-This script is set to run on an interval and checks the page every hour. If anything has changed, it sends a notification.
+##### Heroku Scheduler
+
+[Heroku Scheduler](https://elements.heroku.com/addons/scheduler) runs the script that checks the page every hour. If anything has changed, the app will send a notification.
 
 ##### SendGrid
-Sends the email notification!
+
+[SendGrid](https://elements.heroku.com/addons/sendgrid) sends the email notification!
