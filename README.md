@@ -61,10 +61,10 @@ end
 Some environment variables are defined, locally in an `.env` file, and in the Heroku app's configuration for production:
 
 ```
-export DATABASE_URL=<value>
-export MAILGUN_API_KEY=<value>
-export MAILGUN_FROM=<value>
-export MAILGUN_FROM_NAME=<value>
-export MAILGUN_TO=<value>
-export MAILGUN_TO_NAME=<value>
+DATABASE_URL=<value>
+MAILGUN_API_KEY=<value>
+MAILGUN_FROM=<value>
+MAILGUN_FROM_NAME=<value>
+MAILGUN_TO=<value>
+MAILGUN_TO_NAME=<value>
 ```
