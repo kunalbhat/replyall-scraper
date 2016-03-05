@@ -7,6 +7,10 @@ require_relative 'config/mailgun'
 require_relative 'config/datamapper'
 require_relative 'models/post'
 
+# Just do nothing if someone hits the app's URL
+get '/' do
+end
+
 def send_notification
   @mg_client.send_message "#{ENV['MAILGUN_FROM'].split('@')[1]}", @message_params
 end
