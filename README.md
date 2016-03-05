@@ -31,6 +31,10 @@ if @active_freddie != old_freddie
 end
 ```
 
+The caveat with scraping of course is that this is only reliable as long as the markup of the page being scraped isn't altered significantly.
+
+-
+
 ##### Heroku Scheduler
 
 [Heroku Scheduler](https://elements.heroku.com/addons/scheduler) runs the Rake task below every hour. If the app notices a new Freddie is available, an email notification will be sent.
@@ -41,6 +45,8 @@ task :default do
   get_freddie
 end
 ```
+
+-
 
 ##### Mailgun
 
