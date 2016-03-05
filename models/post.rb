@@ -5,6 +5,5 @@ class Post
   property :title, String
   property :created_at, DateTime
 
-  DataMapper.finalize
-  DataMapper.auto_upgrade!
+  DataMapper.finalize.auto_upgrade!
 end
