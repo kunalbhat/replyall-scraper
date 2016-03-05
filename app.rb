@@ -3,10 +3,8 @@ require 'open-uri'
 
 Bundler.require
 
-  property :id,    Serial
-  property :title, String
-  property :created_at, DateTime
-end
+require_relative 'config/datamapper'
+require_relative 'models/post'
 
 def update_freddie(new_freddie)
   DataMapper.auto_upgrade!
