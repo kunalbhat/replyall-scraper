@@ -1,8 +1,6 @@
+Bundler.require
+
 require 'open-uri'
-require 'nokogiri'
-require 'data_mapper'
-require 'dm-sqlite-adapter'
-require 'dm-migrations'
 
 DataMapper.setup(:default, "sqlite3://#{File.expand_path(File.dirname(__FILE__))}/db/db.sqlite")
 
