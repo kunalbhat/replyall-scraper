@@ -45,3 +45,18 @@ end
 [Mailgun](https://elements.heroku.com/addons/mailgun) sends the email notification when a new Freddie is detected.
 
 ![New Freddie](https://dl.dropboxusercontent.com/u/7583033/github/mailgun_notification.png)
+
+---
+
+### Configuration
+
+Some environment variables are defined:
+
+```
+export DATABASE_URL=<value>
+export MAILGUN_API_KEY=<value>
+export MAILGUN_FROM=<value>
+export MAILGUN_FROM_NAME=<value>
+export MAILGUN_TO=<value>
+export MAILGUN_TO_NAME=<value>
+```
