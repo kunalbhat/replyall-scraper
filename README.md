@@ -31,6 +31,8 @@ end
 
 [Heroku Scheduler](https://elements.heroku.com/addons/scheduler) runs the script that checks the page every hour. If anything has changed, the app will send a notification.
 
-##### SendGrid
+##### Mailgun
 
-[SendGrid](https://elements.heroku.com/addons/sendgrid) sends the email notification!
+[Mailgun](https://elements.heroku.com/addons/mailgun) sends the email notification when a new Freddie is detected.
+
+![New Freddie](https://dl.dropboxusercontent.com/u/7583033/github/mailgun_notification.png)
