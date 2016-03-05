@@ -1,4 +1,4 @@
-# Find Freddie
+# Freddie Alerts
 ### Never miss out on a new Freddie again!
 
 This utility scrapes [mailchimp.com/replyall](http://mailchimp.com/replyall/) at an interval and alerts me if a new Freddie is available. These free giveaways run out quickly, so time is of the essence.
