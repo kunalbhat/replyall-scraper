@@ -59,6 +59,8 @@ task :default do
 end
 ```
 
+![Heroku Scheduler](https://dl.dropboxusercontent.com/u/7583033/github/heroku-scheduler.png)
+
 -
 
 ##### Mailgun
