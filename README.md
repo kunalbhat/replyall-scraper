@@ -3,7 +3,7 @@
 
 This utility scrapes [mailchimp.com/replyall](http://mailchimp.com/replyall/) at an interval and alerts me if a new Freddie is available. These free giveaways run out quickly, so time is of the essence.
 
-![All Gone](https://dl.dropboxusercontent.com/u/7583033/github/all_gone.png)
+![All Gone](https://raw.githubusercontent.com/kunalbhat/replyall-scraper/master/screenshots/all_gone.png)
 
 > Dismayed to miss out on the Gold Freddie, I vowed to never let it happen again.
 
@@ -59,7 +59,7 @@ task :default do
 end
 ```
 
-![Heroku Scheduler](https://dl.dropboxusercontent.com/u/7583033/github/heroku-scheduler.png)
+![Heroku Scheduler](https://raw.githubusercontent.com/kunalbhat/replyall-scraper/master/screenshots/heroku-scheduler.png)
 
 -
 
@@ -67,7 +67,7 @@ end
 
 [Mailgun](https://elements.heroku.com/addons/mailgun) sends the email notification when a new Freddie is detected.
 
-![New Freddie](https://dl.dropboxusercontent.com/u/7583033/github/mailgun_notification.png)
+![New Freddie](https://raw.githubusercontent.com/kunalbhat/replyall-scraper/master/screenshots/mailgun_notification.png)
 
 ---
 
